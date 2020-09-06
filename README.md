@@ -1,4 +1,4 @@
-# install3D for robocup3D
+# install3D for robocup3D ubuntu16.04
 ## 下载之后会看到文件夹中有一个shell脚本 
 ### 1.对于整个文件夹赋予权限
 ```
