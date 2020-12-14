@@ -1,6 +1,6 @@
 ﻿#!/bin/bash
 echo "**********************************************************"
-echo "             3D平台安装，Ubuntu16.04 LST "
+echo "             3D平台安装，Ubuntu18.04 LST "
 echo "             合肥师范学院     缪新宇"
 echo " ！！！！！！！！文件夹的路径中不可以出现中文！！！！！！！！"
 echo "**********************************************************"
@@ -11,14 +11,15 @@ then sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
 fi
 
 #replcae sources.list
-sudo cp sources16.list /etc/apt/sources.list
+sudo cp sources18.list /etc/apt/sources.list
 
 #after replace we should update
 sudo apt-get update
 sudo apt-get upgrade
 
+
 #insatall dependencies
-sudo apt-get install g++ cmake subversion libfreetype6-dev libode-dev libsdl-dev ruby ruby-dev libdevil-dev libboost-dev libboost-thread-dev libboost-regex-dev libboost-system-dev qt4-default openjdk-8-jdk build-essential libgl1-mesa-dev automake libtool -y
+sudo apt-get install kdevelop cmake subversion libfreetype6-dev libode-dev libsdl1.2-dev ruby ruby-dev libdevil-dev libboost-dev libboost-thread-dev libboost-regex-dev libboost-system-dev qt4-default openjdk-8-jdk build-essential libgl1-mesa-dev automake libtool -y
 
 echo "**********************************************************"
 echo "                   安装ODE"
